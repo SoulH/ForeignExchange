@@ -1,6 +1,8 @@
-﻿using ForeignExchange.Services;
+﻿using ForeignExchange.Models;
+using ForeignExchange.Services;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -27,6 +29,8 @@ namespace ForeignExchange.ViewModels
             set { SetProperty(ref pesos, value); }
         }
 
+        public ObservableCollection<ForeignExchangeModel> Items { get; set; }
+        
         decimal pounds;
         public decimal Pounds
         {

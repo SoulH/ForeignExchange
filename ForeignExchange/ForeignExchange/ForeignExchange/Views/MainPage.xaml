@@ -9,31 +9,37 @@
         <StackLayout Padding="10">
             <Label Text="Pesos"/>
             <Entry 
-                Text="{Binding Pesos, Mode=TwoWay}"
-                Keyboard="Numeric" 
-                Placeholder="Indique valor en pesos"/>
+                    Text="{Binding Pesos, Mode=TwoWay}"
+                    Keyboard="Numeric" 
+                    Placeholder="Indique valor en pesos"/>
             <Button 
-                Command="{Binding ConvertCommand}"
-                Text="Convertir"
-                BackgroundColor="Navy"
-                TextColor="White"
-                HeightRequest="48"
-                BorderRadius="10"/>
-            <Label Text="Dolares"/>
-            <Entry 
-                Text="{Binding Dollars, StringFormat='{0:N2} $'}"
-                Keyboard="Numeric" 
-                Placeholder="Indique valor en pesos"/>
-            <Label Text="Euros"/>
-            <Entry 
-                Text="{Binding Euros, StringFormat='{0:N2} €'}"
-                Keyboard="Numeric" 
-                Placeholder="Indique valor en pesos"/>
-            <Label Text="Libras"/>
-            <Entry 
-                Text="{Binding Pounds, StringFormat='{0:N2} £'}"
-                Keyboard="Numeric" 
-                Placeholder="Indique valor en pesos"/>
+                    Command="{Binding ConvertCommand}"
+                    Text="Convertir"
+                    BackgroundColor="Navy"
+                    TextColor="White"
+                    HeightRequest="48"
+                    BorderRadius="10"/>
+            <ScrollView Orientation="Vertical" 
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand">
+                <StackLayout Padding="10">
+                    <Label Text="Dolares"/>
+                    <Entry 
+                        Text="{Binding Dollars, StringFormat='{0:N2} $'}"
+                        Keyboard="Numeric" 
+                        Placeholder="Indique valor en pesos"/>
+                    <Label Text="Euros"/>
+                    <Entry 
+                        Text="{Binding Euros, StringFormat='{0:N2} €'}"
+                        Keyboard="Numeric" 
+                        Placeholder="Indique valor en pesos"/>
+                    <Label Text="Libras"/>
+                    <Entry 
+                        Text="{Binding Pounds, StringFormat='{0:N2} £'}"
+                        Keyboard="Numeric" 
+                        Placeholder="Indique valor en pesos"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 
