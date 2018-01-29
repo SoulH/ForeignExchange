@@ -17,9 +17,4 @@
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\Entities\" />
-    <Folder Include="Data\Prototypes\" />
-  </ItemGroup>
 </Project>
