@@ -5,6 +5,9 @@
              x:Class="ForeignExchange.Views.MainPage"
              Title="Foreign Exchange"
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_settings_white_24dp.png" Text="Configurar"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="10">
             <Label Text="Pesos"/>
