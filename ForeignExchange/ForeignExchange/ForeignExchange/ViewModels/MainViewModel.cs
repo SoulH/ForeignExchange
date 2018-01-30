@@ -73,9 +73,11 @@ namespace ForeignExchange.ViewModels
                 return;
             }
 
-            Dollars = Pesos / (decimal)2881.84438;
-            Pounds = Pesos / (decimal)3608.93372;
-            Euros = Pesos / (decimal)3101.61383;
+            
+
+            Dollars = XeConvertApi.Convert("COP", "USD", Pesos);
+            Pounds = XeConvertApi.Convert("COP", "GBP", Pesos);
+            Euros = XeConvertApi.Convert("COP", "EUR", Pesos);
         }
         #endregion
     }

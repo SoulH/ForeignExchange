@@ -1,16 +1,16 @@
-﻿using ForeignExchange.Data.Prototypes;
-using SQLite;
+﻿using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace ForeignExchange.Data.Entities
 {
-    public class Coin : Entity
+    public class Country : Entry
     {
-        [Unique]
+        [Unique(Name ="CountryCode")]
         public string Code { get; set; }
 
-        public string Symbol { get; set; }
+        public string Img { get; set; }
     }
 }

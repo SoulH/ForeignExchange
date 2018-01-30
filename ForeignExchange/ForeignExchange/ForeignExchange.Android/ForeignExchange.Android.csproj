@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="RestSharp">
+      <Version>106.2.1</Version>
+    </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.4.118</Version>
     </PackageReference>
@@ -62,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementations\CloseApplication.cs" />
-    <Compile Include="Implementations\SQLiteConfig.cs" />
+    <Compile Include="Implementations\AndroidSQLitePlatform.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

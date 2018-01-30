@@ -28,17 +28,17 @@
                 <StackLayout Padding="10">
                     <Label Text="Dolares"/>
                     <Entry 
-                        Text="{Binding Dollars, StringFormat='{0:N2} $'}"
+                        Text="{Binding Dollars, StringFormat='{0:N4} $'}"
                         Keyboard="Numeric" 
                         Placeholder="Indique valor en pesos"/>
                     <Label Text="Euros"/>
                     <Entry 
-                        Text="{Binding Euros, StringFormat='{0:N2} €'}"
+                        Text="{Binding Euros, StringFormat='{0:N4} €'}"
                         Keyboard="Numeric" 
                         Placeholder="Indique valor en pesos"/>
                     <Label Text="Libras"/>
                     <Entry 
-                        Text="{Binding Pounds, StringFormat='{0:N2} £'}"
+                        Text="{Binding Pounds, StringFormat='{0:N4} £'}"
                         Keyboard="Numeric" 
                         Placeholder="Indique valor en pesos"/>
                 </StackLayout>
